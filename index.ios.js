@@ -2,12 +2,10 @@
 
 // Import library
 import React from 'react';
-import ReactNative from 'react-native';
+import {AppRegistry, Text} from 'react-native';
 
 // Created componence
-const App = () => {
-  return <Text> Hello world </Text>;
-};
+const App = () => <Text> Hello world </Text>;
 
 // Render it on device
-ReactNative.AppRegistry.registerComponent('albums', () => App);
+AppRegistry.registerComponent('albums', () => App);
