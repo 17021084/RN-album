@@ -1,0 +1,60 @@
+{
+  "music_albums": [
+    {
+      "id": 1,
+      "title": "Willow",
+      "artist": "Taylor Swift",
+      "url": "https://www.youtube.com/watch?v=RsEZmictANA&ab_channel=TaylorSwiftVEVO",
+      "image": "https://vcdn-giaitri.vnecdn.net/2020/03/06/Taylor-Swift-6612-1583461788.jpg",
+      "thumbnail_image": "https://e1.pngegg.com/pngimages/87/618/png-clipart-taylor-swift-4-taylor-swift-thumbnail.png"
+    },
+    {
+      "id": 2,
+      "title": "elixe",
+      "artist": "Taylor Swift",
+      "url": "https://www.youtube.com/watch?v=RsEZmictANA&ab_channel=TaylorSwiftVEVO",
+      "image": "https://vcdn-giaitri.vnecdn.net/2020/03/06/Taylor-Swift-6612-1583461788.jpg",
+      "thumbnail_image": "https://e1.pngegg.com/pngimages/87/618/png-clipart-taylor-swift-4-taylor-swift-thumbnail.png"
+    },
+    {
+      "id": 3,
+      "title": "black space",
+      "artist": "Taylor Swift",
+      "url": "https://www.youtube.com/watch?v=RsEZmictANA&ab_channel=TaylorSwiftVEVO",
+      "image": "https://vcdn-giaitri.vnecdn.net/2020/03/06/Taylor-Swift-6612-1583461788.jpg",
+      "thumbnail_image": "https://e1.pngegg.com/pngimages/87/618/png-clipart-taylor-swift-4-taylor-swift-thumbnail.png"
+    },
+    {
+      "id": 4,
+      "title": "Roar",
+      "artist": "Katy",
+      "url": "https://www.youtube.com/watch?v=RsEZmictANA&ab_channel=TaylorSwiftVEVO",
+      "image": "https://vcdn-giaitri.vnecdn.net/2020/03/06/Taylor-Swift-6612-1583461788.jpg",
+      "thumbnail_image": "https://e1.pngegg.com/pngimages/87/618/png-clipart-taylor-swift-4-taylor-swift-thumbnail.png"
+    },
+    {
+      "id": 5,
+      "title": "getting back together",
+      "artist": "Taylor Swift",
+      "url": "https://www.youtube.com/watch?v=RsEZmictANA&ab_channel=TaylorSwiftVEVO",
+      "image": "https://vcdn-giaitri.vnecdn.net/2020/03/06/Taylor-Swift-6612-1583461788.jpg",
+      "thumbnail_image": "https://e1.pngegg.com/pngimages/87/618/png-clipart-taylor-swift-4-taylor-swift-thumbnail.png"
+    },
+    {
+      "id": 6,
+      "title": "Love story",
+      "artist": "Taylor Swift",
+      "url": "https://www.youtube.com/watch?v=RsEZmictANA&ab_channel=TaylorSwiftVEVO",
+      "image": "https://vcdn-giaitri.vnecdn.net/2020/03/06/Taylor-Swift-6612-1583461788.jpg",
+      "thumbnail_image": "https://e1.pngegg.com/pngimages/87/618/png-clipart-taylor-swift-4-taylor-swift-thumbnail.png"
+    },
+    {
+      "id": 7,
+      "title": "Swift",
+      "artist": "Taylor Swift",
+      "url": "https://www.youtube.com/watch?v=RsEZmictANA&ab_channel=TaylorSwiftVEVO",
+      "image": "https://vcdn-giaitri.vnecdn.net/2020/03/06/Taylor-Swift-6612-1583461788.jpg",
+      "thumbnail_image": "https://e1.pngegg.com/pngimages/87/618/png-clipart-taylor-swift-4-taylor-swift-thumbnail.png"
+    }
+  ]
+}
