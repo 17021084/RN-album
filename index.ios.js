@@ -2,10 +2,10 @@
 
 // Import library
 import React from 'react';
-import {AppRegistry, Text} from 'react-native';
-
+import {AppRegistry} from 'react-native';
+import Header from './src/components/header';
 // Created componence
-const App = () => <Text> Hello world </Text>;
+const App = () => <Header />;
 
 // Render it on device
 AppRegistry.registerComponent('albums', () => App);
