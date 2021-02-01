@@ -6,24 +6,29 @@ import CardSection from './cardSection';
 export default function AlbumDetail(props) {
   const {id, title, artist, url, image, thumbnail_image} = props.album;
 
-  const {textContainer, thumbnail, headerStyle} = styles;
+  const {
+    headerTextStyle,
+    coverStyle,
+    textContainerStyle,
+    thumbnailStyle,
+    headerStyle,
+  } = styles;
   return (
     <Card key={id}>
       <CardSection style={headerStyle}>
         <Image
-          style={thumbnail}
+          style={thumbnailStyle}
           source={{
-            uri:
-              'https://e1.pngegg.com/pngimages/87/618/png-clipart-taylor-swift-4-taylor-swift-thumbnail.png',
+            uri: thumbnail_image,
           }}
         />
-        <View style={textContainer}>
-          <Text>{title}</Text>
+        <View style={textContainerStyle}>
+          <Text style={headerTextStyle}>{title}</Text>
           <Text>{artist}</Text>
         </View>
       </CardSection>
       <CardSection>
-        <Text>{image}</Text>
+        <Image style={coverStyle} source={{uri: image}} />
       </CardSection>
       <CardSection>
         <Text>{url}</Text>
@@ -33,15 +38,25 @@ export default function AlbumDetail(props) {
 }
 
 const styles = {
-  textContainer: {
+  textContainerStyle: {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-around',
     paddingLeft: 30,
   },
-  headerStyle: {},
-  thumbnail: {
+  headerTextStyle: {
+    fontSize: 25,
+    paddingBottom: 5,
+  },
+  thumbnailStyle: {
     width: 66,
     height: 58,
+  },
+  coverStyle: {
+    // cách 1  width : thằng này hard code bằng cách có margin padding rồi thì chỉ cần lấy screen width - đi thôi
+    //cách 2
+    flex: 1, // children node se chiem toan bo dien tich
+    width: null,
+    height: 300, // neu ko khai bao mac dinh de 0
   },
 };
