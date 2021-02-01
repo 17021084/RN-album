@@ -1,10 +1,11 @@
 import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
 
-export default function ButtButtonLearnMore({onPress}) {
+export default function ButtButtonLearnMore({onPress , children}) {
+  //Nhan ham xuong
   return (
     <TouchableOpacity style={styles.buttonStyle} onPress={onPress}>
-      <Text style={styles.textStyle}>Click me to watch videos </Text>
+      <Text style={styles.textStyle}>{children} </Text>
     </TouchableOpacity>
   );
 }

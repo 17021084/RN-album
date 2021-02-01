@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Image, Text, Button} from 'react-native';
+import {View, Image, Text, Linking} from 'react-native';
 import Card from './card';
 import CardSection from './cardSection';
 import ButtonLearnMore from './ButtonLearnMore';
@@ -34,9 +34,11 @@ export default function AlbumDetail(props) {
       <CardSection>
         <ButtonLearnMore
           onPress={() => {
-            console.log('press');
+            Linking.openURL(url);
           }}
-        />
+        >
+        <Text> Listenn now </Text>
+        </ButtonLearnMore>
       </CardSection>
     </Card>
   );
