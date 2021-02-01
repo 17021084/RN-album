@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text} from 'react-native';
+import {ScrollView, Text} from 'react-native';
 import axios from 'axios';
 import AlbumDetail from './albumDetail';
 
@@ -21,14 +21,16 @@ class AlbumList extends Component {
 
   render() {
     return (
-      <View>
-        <Text> Album list abc !!!!</Text>
+      <ScrollView>
+        <Text style={styles.textStyle}> Album list abc !!!!</Text>
         {this.state.albums.map((album) => (
           <AlbumDetail album={album} />
         ))}
-      </View>
+      </ScrollView>
     );
   }
 }
-
+const styles = {
+  textStyle: {textAlign: 'center', padding: 20, fontSize: 30},
+};
 export default AlbumList;
