@@ -15,10 +15,13 @@ const styles = {
     border: 'dash',
     borderColor: '#fff',
     borderBottomWidth: 0,
+
     shadowOffset: {height: 0, width: 2},
     shadowOpacity: 0.2,
     shadowRadius: 2,
+    // đô cao. nếu có >2 thằng sibling đều cái shadow, thì cao hơn bóng to hơn
     elevation: 3,
+
     marginLeft: 40,
     marginRight: 40,
     marginTop: 20,
