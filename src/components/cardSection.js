@@ -8,6 +8,7 @@ export default function CardSection(props) {
 const styles = {
   containerStyle: {
     borderBottomWidth: 1,
+    borderColor: "#ddf",
     padding: 5,
     backgroundColor: '#fff',
     display: 'flex',

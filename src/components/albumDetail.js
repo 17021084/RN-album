@@ -1,7 +1,8 @@
 import React from 'react';
-import {View, Image, Text} from 'react-native';
+import {View, Image, Text, Button} from 'react-native';
 import Card from './card';
 import CardSection from './cardSection';
+import ButtonLearnMore from './ButtonLearnMore';
 
 export default function AlbumDetail(props) {
   const {id, title, artist, url, image, thumbnail_image} = props.album;
@@ -31,7 +32,11 @@ export default function AlbumDetail(props) {
         <Image style={coverStyle} source={{uri: image}} />
       </CardSection>
       <CardSection>
-        <Text>{url}</Text>
+        <ButtonLearnMore
+          onPress={() => {
+            console.log('press');
+          }}
+        />
       </CardSection>
     </Card>
   );

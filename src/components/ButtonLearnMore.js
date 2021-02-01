@@ -1,0 +1,28 @@
+import React from 'react';
+import {Text, TouchableOpacity} from 'react-native';
+
+export default function ButtButtonLearnMore({onPress}) {
+  return (
+    <TouchableOpacity style={styles.buttonStyle} onPress={onPress}>
+      <Text style={styles.textStyle}>Click me to watch videos </Text>
+    </TouchableOpacity>
+  );
+}
+
+const styles = {
+  textStyle: {
+    fontWeigt: '400',
+    color: '#007afd',
+    fontSize: 20,
+    alignSelf: 'center',
+  },
+  buttonStyle: {
+    flex: 1,
+    backgroundColor: '#fff ',
+    alignSefl: 'stretch',
+    borderRadius: 3,
+    borderWidth: 1,
+    borderColor: '#007afd',
+    height: 30,
+  },
+};
