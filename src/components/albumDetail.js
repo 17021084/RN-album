@@ -1,16 +1,23 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Image, Text} from 'react-native';
 import Card from './card';
 import CardSection from './cardSection';
 
 export default function AlbumDetail(props) {
   const {id, title, artist, url, image, thumbnail_image} = props.album;
-  const {albumContainer, headerStyle} = styles;
+
+  const {textContainer, thumbnail, headerStyle} = styles;
   return (
     <Card key={id}>
       <CardSection style={headerStyle}>
-        <Text>{thumbnail_image}</Text>
-        <View>
+        <Image
+          style={thumbnail}
+          source={{
+            uri:
+              'https://e1.pngegg.com/pngimages/87/618/png-clipart-taylor-swift-4-taylor-swift-thumbnail.png',
+          }}
+        />
+        <View style={textContainer}>
           <Text>{title}</Text>
           <Text>{artist}</Text>
         </View>
@@ -26,13 +33,15 @@ export default function AlbumDetail(props) {
 }
 
 const styles = {
-  albumContainer: {
-    paddingTop: 10,
-    paddingBot: 10,
-  },
-  headerStyle: {
+  textContainer: {
     display: 'flex',
-    flexDirection: 'row',
-    backgroundColor: 'red',
+    flexDirection: 'column',
+    justifyContent: 'space-around',
+    paddingLeft: 30,
+  },
+  headerStyle: {},
+  thumbnail: {
+    width: 66,
+    height: 58,
   },
 };
